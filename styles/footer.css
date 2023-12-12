@@ -1,0 +1,32 @@
+.site_footer_top {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: grey;
+}
+
+.footer_menu {
+	display: flex;
+}
+
+.logo {
+	width: 200px;
+}
+
+.number {
+	color: black;
+}
+
+.site_footer_menu_block span {
+	color: black;
+}
+
+@media (max-width: 670px) {
+	.site_footer_top {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: grey;
+	}
+}

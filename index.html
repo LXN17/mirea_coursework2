@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LXN Parts</title>
+		<link
+			type="Image/x-icon"
+			href="images/header/Mercedes AMG.svg"
+			rel="icon"
+		/>
+		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="stylesheet" href="styles/header.css" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/footer.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<div class="header">
+					<div class="header_info">
+						<ul>
+							<li>
+								<a href="/">
+									<img
+										class="logo"
+										src="images/header/Mercedes AMG.svg"
+										alt=""
+									/>
+								</a>
+							</li>
+							<li>
+								<div class="phone">
+									<a href="tel:+79252901234">+7 925 290 12-34</a>
+									<span class="phone_span">Прием звонков с 9:00 до 21:00</span>
+								</div>
+							</li>
+							<li class="cart">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="#000000"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="lucide lucide-shopping-cart"
+								>
+									<circle cx="8" cy="21" r="1" />
+									<circle cx="19" cy="21" r="1" />
+									<path
+										d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+									/>
+								</svg>
+								<p>Корзина</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<div class="main_top">
+				<h1>LXN Parts - Интернет-магазин автозапчастей Mercedes-Benz AMG</h1>
+				<p>
+					Добро пожаловать в "LXN Parts AMG" – Ваш лучший выбор для
+					автозапчастей Mercedes-Benz AMG C, E и S классов!
+				</p>
+			</div>
+			<div class="background_image">
+				<div class="container">
+					<main>
+						<div class="home">
+							<div class="card">
+								<div class="imgBox">
+									<img src="images/main/TO.png" alt="" class="card_item" />
+								</div>
+								<div class="contentBox">
+									<h3>Запчасти для ТО</h3>
+									<a href="TO.html" class="buy">Перейти</a>
+								</div>
+							</div>
+							<div class="card">
+								<div class="imgBox">
+									<img src="images/main/Tyre.png" alt="" class="card_item" />
+								</div>
+								<div class="contentBox">
+									<h3>Шины</h3>
+									<a href="Tyre.html" class="buy">Перейти</a>
+								</div>
+							</div>
+							<div class="card">
+								<div class="imgBox">
+									<img src="images/main/rim.png" alt="" class="card_item" />
+								</div>
+								<div class="contentBox">
+									<h3>Диски</h3>
+									<a href="rim.html" class="buy">Перейти</a>
+								</div>
+							</div>
+							<div class="card">
+								<div class="imgBox">
+									<img src="images/main/battery.png" alt="" class="card_item" />
+								</div>
+								<div class="contentBox">
+									<h3>Аккумуляторы</h3>
+									<a href="battery.html" class="buy">Перейти</a>
+								</div>
+							</div>
+							<div class="card">
+								<div class="imgBox">
+									<img src="images/main/oil.png" alt="" class="card_item" />
+								</div>
+								<div class="contentBox">
+									<h3>Масла и жидкости</h3>
+									<a href="oil.html" class="buy">Перейти</a>
+								</div>
+							</div>
+						</div>
+					</main>
+				</div>
+			</div>
+			<div class="meta_content">
+				<a href="about.html"><h1 style="color: black">О нас</h1> </a>
+			</div>
+			<div class="shipping">
+				<a href="shipping.html"><h1 style="color: black">Доставка</h1></a>
+			</div>
+			<footer>
+				<div class="site_footer">
+					<div class="site_footer_top">
+						<div class="logo">
+							<img src="images/header/Mercedes AMG.svg" alt="" />
+						</div>
+						<div class="footer_menu">
+							<ul>
+								<li>
+									<a href="TO.html">Запчасти для ТО</a>
+								</li>
+								<li>
+									<a href="Tyre.html">Резина</a>
+								</li>
+								<li>
+									<a href="rim.html">Диски</a>
+								</li>
+								<li>
+									<a href="battery.html">Аккумуляторы</a>
+								</li>
+								<li>
+									<a href="oil.html">Масла и жидкости</a>
+								</li>
+							</ul>
+						</div>
+						<div class="site_footer_menu_block">
+							<div class="phone">
+								<a href="tel: +79252901234">
+									<div class="icon"></div>
+									<div class="number">+7 925 290 12-34</div>
+								</a>
+							</div>
+							<span>Прием звонков с 9:00 до 21:00</span>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="smartbasket/css/smartbasket.min.css" />
+
+		<div class="smart-basket__wrapper"></div>
+
+		<script src="./smartbasket/js/smartbasket.min.js"></script>
+
+		<script>
+			$(function () {
+				$('.smart-basket__wrapper').smbasket({
+					productElement: 'card',
+					buttonAddToBasket: 'b',
+					productPrice: 'product__price-number',
+					productSize: 'product__size-element',
+
+					productQuantityWrapper: 'product__quantity',
+					smartBasketMinArea: 'cart',
+					countryCode: '+7',
+					smartBasketCurrency: '₽',
+					smartBasketMinIconPath: './smartbasket/img/shopping-basket-wight.svg',
+
+					agreement: {
+						isRequired: true,
+						isChecked: true,
+						isLink: '',
+					},
+					nameIsRequired: false,
+				})
+			})
+		</script>
+	</body>
+</html>

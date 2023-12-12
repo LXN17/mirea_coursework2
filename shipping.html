@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="stylesheet" href="styles/header.css" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/footer.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<div class="header">
+					<div class="header_info">
+						<ul>
+							<li>
+								<a href="/">
+									<img
+										class="logo"
+										src="images/header/Mercedes AMG.svg"
+										alt=""
+									/>
+								</a>
+							</li>
+							<li>
+								<div class="phone">
+									<a href="tel:+79252901234">+7 925 290 12-34</a>
+									<span class="phone_span">Прием звонков с 9:00 до 21:00</span>
+								</div>
+							</li>
+							<li class="cart">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="#000000"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="lucide lucide-shopping-cart"
+								>
+									<circle cx="8" cy="21" r="1" />
+									<circle cx="19" cy="21" r="1" />
+									<path
+										d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+									/>
+								</svg>
+								<p>Корзина</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<div class="background_image">
+				<div class="meta_content">
+					<h1>Доставка по Москве и области</h1>
+					<p>
+						Доставка по Москве и Московской области осуществляется собственной
+						курьерской службой.
+					</p>
+					<h2>Стоимость доставки</h2>
+					<p>
+						Для заказов суммой до 1000 рублей включительно стоимость доставки
+						составляет 299 рублей. Для заказов суммой от 1000 и более доставка
+						осуществляется бесплатно. В зависимости от указанного адреса,
+						доставка будет передана в соответствующий логистический центр.
+					</p>
+					<h2>Временные интервалы</h2>
+					<p>
+						Мы доставляем товар в интервале с 10:00 до 18:00. Если необходима
+						доставка с 18:00 до 21:00, согласуйте её предварительно с
+						менеджером.
+					</p>
+					<h2>Дополнительные сведения</h2>
+					<p>
+						Доставка производится до подъезда. При выезде водитель дополнительно
+						позвонит и предупредит о доставке. Сроки доставки отдельно
+						согласовываются между менеджером и клиентом, в зависимости от
+						загруженности службы доставки.
+					</p>
+				</div>
+			</div>
+
+			<footer>
+				<div class="site_footer">
+					<div class="site_footer_top">
+						<div class="logo">
+							<img src="images/header/Mercedes AMG.svg" alt="" />
+						</div>
+						<div class="footer_menu">
+							<ul>
+								<li>
+									<a href="TO.html">Запчасти для ТО</a>
+								</li>
+								<li>
+									<a href="Tyre.html">Резина</a>
+								</li>
+								<li>
+									<a href="rim.html">Диски</a>
+								</li>
+								<li>
+									<a href="battery.html">Аккумуляторы</a>
+								</li>
+								<li>
+									<a href="oil.html">Масла и жидкости</a>
+								</li>
+							</ul>
+						</div>
+						<div class="site_footer_menu_block">
+							<div class="phone">
+								<a href="tel: +79252901234">
+									<div class="icon"></div>
+									<div class="number">+7 925 290 12-34</div>
+								</a>
+							</div>
+							<span>Прием звонков с 9:00 до 21:00</span>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="smartbasket/css/smartbasket.min.css" />
+
+		<div class="smart-basket__wrapper"></div>
+
+		<script src="./smartbasket/js/smartbasket.min.js"></script>
+
+		<script>
+			$(function () {
+				$('.smart-basket__wrapper').smbasket({
+					productElement: 'card',
+					buttonAddToBasket: 'buy',
+					productPrice: 'product__price-number',
+					productSize: 'product__size-element',
+
+					productQuantityWrapper: 'product__quantity',
+					smartBasketMinArea: 'cart',
+					countryCode: '+7',
+					smartBasketCurrency: '₽',
+					smartBasketMinIconPath: './smartbasket/img/shopping-basket-wight.svg',
+
+					agreement: {
+						isRequired: true,
+						isChecked: true,
+						isLink: 'https://artstranger.ru/privacy.html',
+					},
+					nameIsRequired: false,
+				})
+			})
+		</script>
+	</body>
+</html>
